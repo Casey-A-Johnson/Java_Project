@@ -9,7 +9,7 @@
 <meta charset="ISO-8859-1">
 <title>Workout Categories</title>
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="/css/style.css"> 
+<link rel="stylesheet" type="text/css" href="/css/category.css"> 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200&family=Prata&display=swap" rel="stylesheet"> 
@@ -21,32 +21,23 @@
 	<div class = "container">
 		<div class="categoryMain">
 			<div class="categoryMainLeft">
-				<a href=""><p>Profile</p></a>
-				<a href="/categories"><p>Workouts</p></a>
-				<c:if test="${userId != null }">
-					<a href="/create/workout"><p>Add Workout</p></a>
-				</c:if>
-				<a href="/"><p>Dashboard</p></a>
-				<c:choose>
-					<c:when test="${userId== null }">
-						<a href="/login"><p>Login</p></a>
-					</c:when>
-					<c:otherwise>
-						<a href="/logout"><p>Logout</p></a>
-					</c:otherwise>
-				</c:choose>
+				<ul>
+					<li><a href='/'>Dashboard</a></li>
+					<li><a>Add Workout</a></li>
+					<li><a href="/logout">Logout</a></li>
+				</ul>
 			</div>
 			<div class="categoryMainRight">
-				<div class="categoryNavbar">
-						<a href="/category/Chest/workouts">Chest</a>
-						<a href="/category/Arms/workouts">Arms</a>
-						<a href="/category/Back/workouts">Back</a>
-						<a href="/category/Legs/workouts">Legs</a>
-						<a href="/category/Full Body/workouts">Full Body</a>
-						<a href="/category/Yoga/workouts">Yoga</a>
-						<a href="/category/HITT/workouts">HITT</a>
-						<a href="/category/Cardio/workouts">Cardio</a>
-				</div>
+				<ul class="categoryNavbar">
+						<li><a href="/category/Chest/workouts">Chest</a></li>
+						<li><a href="/category/Arms/workouts">Arms</a></li>
+						<li><a href="/category/Back/workouts">Back</a></li>
+						<li><a href="/category/Legs/workouts">Legs</a></li>
+						<li><a href="/category/Full Body/workouts">Full Body</a></li>
+						<li><a href="/category/Yoga/workouts">Yoga</a></li>
+						<li><a href="/category/HITT/workouts">HITT</a></li>
+						<li><a href="/category/Cardio/workouts">Cardio</a></li>
+				</ul>
 				<div class= "categorySubbanner">
 					<h3>Featured Workouts</h3>
 				</div>
