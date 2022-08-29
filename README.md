@@ -32,6 +32,7 @@ Features
 - Users can upload images or videos demonstrating the workout.
 
 Setup
+
 Here is a list of all the depenedices needed for this project:
 
     <dependencies>
