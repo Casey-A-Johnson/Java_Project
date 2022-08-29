@@ -1,5 +1,5 @@
 Workout App
-> this application was designed to help generate new workout ideas for those who may be stuck doing the same old workouts each day.
+> This application was designed to help generate new workout ideas for those who may be stuck doing the same old workouts each day.
 
 Table of Contents
 * [General Info]
@@ -32,7 +32,6 @@ Features
 - Users can upload images or videos demonstrating the workout.
 
 Setup
-
 Here is a list of all the depenedices needed for this project:
 
     <dependencies>
@@ -107,15 +106,14 @@ Here is a list of all the depenedices needed for this project:
 		</dependency>
 	</dependencies>
 
-You will also need to create a Mysql schema. In the applicaiton.properties file add the following code if not already there:
-spring.mvc.view.prefix=/WEB-INF/
+You will also need to create a Mysql schema through MySQL workbench. In the applicaiton.properties file add the following code if not already there:
 
-spring.datasource.url=jdbc:mysql://localhost:3306/<<your_schema_name>> Make sure to add you schema name!
-spring.datasource.username=root
-spring.datasource.password=root
-spring.jpa.hibernate.ddl-auto=update
-
-spring.mvc.hiddenmethod.filter.enabled=true
+	spring.mvc.view.prefix=/WEB-INF/
+	spring.datasource.url=jdbc:mysql://localhost:3306/<<your_schema_name>> Make sure to add you schema name!
+	spring.datasource.username=root // user your own username and password here
+	spring.datasource.password=<<Password>>
+	spring.jpa.hibernate.ddl-auto=update
+	spring.mvc.hiddenmethod.filter.enabled=true
 
 Project is ran with Spring Boot Suite. Download file and upload them as a new spring starter pack. Add all the depenedencies above into the pom.xml file. Right click and selection run as spring boot app. The application will then be live on http://localhost:8080
 
@@ -128,12 +126,12 @@ Room for Improvement
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- Add MANY-To-MANY relationships
+- Improve web site intercations and animations.
 
 To do:
-- Feature to be added 1
-- Feature to be added 2
+- Add many-to-many relationship to allow for commets and likes
+- Every liked workout by a users will be stored in a Liked Section for them to easily access later.
 
 
 Contact
